@@ -1,12 +1,12 @@
 NEW DATE AND TIME API
------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 A few examples to show the use of the new Date and Time API,
 that was introduces in Java 8.
 
 The classes that are part of this API reside in the java.time package.
 
------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 Getting a LocalDate and a LocalDateTime with method "now":
 
@@ -24,7 +24,7 @@ Getting a LocalDate and a LocalDateTime with method "now":
 
 ```
 
------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 
 LocalDate has methods that allows to add or substract days, months, weeks and years to a given date.
 For example:
@@ -55,7 +55,32 @@ For example:
 
 ```
 
------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+
+When using LocalDateTime, there are also available methods that allow to add or substract hours, minutes,
+seconds and nanoseconds:
+
+
+		LocalDateTime todayWithTime = LocalDateTime.now();
+		System.out.println("Today with time: " + todayWithTime);
+		
+		LocalDateTime plusFiveHours = todayWithTime.plusHours(5);
+		System.out.println("Plus five hours: " + plusFiveHours);
+
+		LocalDateTime minusNinetySeconds = todayWithTime.minusSeconds(90);
+		System.out.println("Minus ninety seconds: " + minusNinetySeconds);		
+
+
+```
+
+		Today with time: 2022-02-15T22:05:24.745
+		Plus five hours: 2022-02-16T03:05:24.745
+		Minus ninety seconds: 2022-02-15T22:03:54.745
+
+
+```
+
+-------------------------------------------------------------------------------------------------------
 
 
 
