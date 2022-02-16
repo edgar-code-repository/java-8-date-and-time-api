@@ -10,20 +10,48 @@ The classes that are part of this API reside in the java.time package.
 
 Getting a LocalDate and a LocalDateTime with method "now":
 
-```
+		LocalDate todayWithoutTime = LocalDate.now();
+		System.out.println("Today: " + todayWithoutTime);
+	
+		LocalDateTime todayWithTime = LocalDateTime.now();
+		System.out.println("Today with time: " + todayWithTime);
 
-	LocalDate todayWithoutTime = LocalDate.now();
-	System.out.println("Today: " + todayWithoutTime);
-
-	LocalDateTime todayWithTime = LocalDateTime.now();
-	System.out.println("Today with time: " + todayWithTime);
-
-```
 
 ```
 
-	Today: 2022-02-12
-	Today with time: 2022-02-12T23:44:49.907
+		Today: 2022-02-12
+		Today with time: 2022-02-12T23:44:49.907
+
+```
+
+-----------------------------------------------------------------------------
+
+LocalDate has methods that allows to add or substract days, months, weeks and years to a given date.
+For example:
+
+		LocalDate todayWithoutTime = LocalDate.now();
+		System.out.println("Today: " + todayWithoutTime);		
+		
+		LocalDate tomorrow = LocalDate.now().plusDays(1);
+		System.out.println("Tomorrow: " + tomorrow);
+		
+		LocalDate plusOneMonth = LocalDate.now().plusMonths(1);
+		System.out.println("Plus 1 month: " + plusOneMonth);		
+		
+		LocalDate minusOneYear = LocalDate.now().minusYears(1);
+		System.out.println("Minus one year: " + minusOneYear);
+
+		LocalDate minusThreeWeeks = LocalDate.now().minusWeeks(3);
+		System.out.println("Minus three weeks: " + minusThreeWeeks);	
+		
+		
+```
+
+		Today: 2022-02-15
+		Tomorrow: 2022-02-16
+		Plus 1 month: 2022-03-15
+		Minus one year: 2021-02-15
+		Minus three weeks: 2022-01-25
 
 ```
 

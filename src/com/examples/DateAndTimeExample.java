@@ -12,13 +12,7 @@ public class DateAndTimeExample {
 
 		LocalDateTime todayWithTime = LocalDateTime.now();
 		System.out.println("Today with time: " + todayWithTime);
-		
-		
-		LocalDate tomorrow = todayWithoutTime.plusDays(1);
-		System.out.println("Tomorrow: " + tomorrow);
-		
-		LocalDate yesterday = todayWithoutTime.minusDays(1);
-		System.out.println("Yesterday: " + yesterday);
+
 		
 		
 	}
