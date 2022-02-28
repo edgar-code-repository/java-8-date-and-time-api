@@ -1,15 +1,16 @@
 NEW DATE AND TIME API
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
 A few examples to show the use of the new Date and Time API,
 that was introduces in Java 8.
 
+This API uses the calendar system defined in ISO-8601 as the default calendar.
+
 The classes that are part of this API reside in the java.time package.
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
-Getting a LocalDate and a LocalDateTime with method "now":
-
+**Getting a LocalDate and a LocalDateTime using factory method "now":**
 
 ```
 
@@ -22,17 +23,22 @@ System.out.println("Today with time: " + todayWithTime);
 
 ```
 
-Output:
+**Output:**
+
+```
 
 Today: 2022-02-12
 
 Today with time: 2022-02-12T23:44:49.907
 
+```
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
-LocalDate has methods that allows to add or substract days, months, weeks and years to a given date.
-For example:
+**LocalDate has methods that allows to add or substract days, months, weeks and years to a given date.**
+
+
+**For example:**
 
 ```
 
@@ -53,7 +59,9 @@ System.out.println("Minus three weeks: " + minusThreeWeeks);
 
 ```		
 		
-Output:
+**Output:**
+
+```
 
 Today: 2022-02-15
 
@@ -65,11 +73,12 @@ Minus one year: 2021-02-15
 
 Minus three weeks: 2022-01-25
 
+```
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
-When using LocalDateTime, there are also available methods that allow to add or substract hours, minutes,
-seconds and nanoseconds:
+
+**When using LocalDateTime, there are also available methods that allow to add or substract hours, minutes, seconds and nanoseconds:**
 
 ```
 
@@ -84,7 +93,10 @@ System.out.println("Minus ninety seconds: " + minusNinetySeconds);
 
 ```
 
-Output:
+**Output:**
+
+
+```
 
 Today with time: 2022-02-15T22:05:24.745
 
@@ -92,8 +104,10 @@ Plus five hours: 2022-02-16T03:05:24.745
 
 Minus ninety seconds: 2022-02-15T22:03:54.745
 
+```
 
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 
