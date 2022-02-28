@@ -13,7 +13,7 @@ public class FactoryMethodsExample {
 		LocalDate localdateParse = LocalDate.parse("2022-02-28");
 		LocalDate localdateFrom = LocalDate.from(today);
 		
-		LocalDateTime localdatetimeOf = LocalDateTime.of(2022, 2, 28, 15, 35, 50);
+		LocalDateTime localdatetimeOf = LocalDateTime.of(2022, 2, 28, 15, 35);
 		LocalDateTime localdatetimeParse = LocalDateTime.parse("2022-02-28T15:35:55");
 		LocalDateTime localdatetimeFrom = LocalDateTime.from(today);		
 		

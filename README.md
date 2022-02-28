@@ -111,6 +111,20 @@ Minus ninety seconds: 2022-02-15T22:03:54.745
 **Using methods of, parse and from to get a LocalDate/LocalDateTime:**
 
 
+```
+
+LocalDateTime today = LocalDateTime.now();
+
+LocalDate localdateOf = LocalDate.of(2022, 2, 28);
+LocalDate localdateParse = LocalDate.parse("2022-02-28");
+LocalDate localdateFrom = LocalDate.from(today);
+
+LocalDateTime localdatetimeOf = LocalDateTime.of(2022, 2, 28, 15, 35);
+LocalDateTime localdatetimeParse = LocalDateTime.parse("2022-02-28T15:35:55");
+LocalDateTime localdatetimeFrom = LocalDateTime.from(today);	
+
+```
+
 **Output:**
 
 
