@@ -13,5 +13,8 @@ The classes that are part of this API reside in the java.time package.
 
 [2.- LocalDateTime: Getting a date (with time)](./2.md) 
 
+[3.- Adding or substracting days, months, weeks and years](./3.md) 
+
+[4.- Adding or substracting hours, minutes and seconds](./3.md) 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
