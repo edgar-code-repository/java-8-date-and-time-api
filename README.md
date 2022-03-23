@@ -9,9 +9,9 @@ The classes that are part of this API reside in the java.time package.
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 
-**1.- [LocalDate: Getting a date (without time)](./1.md) **
+[1.- LocalDate: Getting a date (without time)](./1.md)
 
-**2.- [LocalDateTime: Getting a date (with time)](./2.md) ** 
+[2.- LocalDateTime: Getting a date (with time)](./2.md) 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------
